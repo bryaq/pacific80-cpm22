@@ -1,0 +1,26 @@
+CCP8080.ASM is CCP22Z80 from B1 on the Mississauga RIBBS with
+four changes:
+1.  Reconverted to 8080 code.
+2.  CLS command expunged.
+3.  All other built-ins changed to single-letter commands
+    (L for list, T for type etc).  Å for erase is changed
+    to Q to avoid inadvertent deletions.
+4.  To save code space, user nos. above 9 are displayed in hex.
+
+
+N.B. BUG FIX
+
+If you're having trouble running Submit or Supersub with this
+program, try the following;
+
+a) Create a CPM.COM file using sysgen.
+b) Using DDT change the follwing memory locations;
+    987h to 00
+    A01h to 08
+    A03h to 08
+c) Reboot, and using Sysgen place modified CCP on disk.
+
+
+Regards.......Ray Woodley
+
+
